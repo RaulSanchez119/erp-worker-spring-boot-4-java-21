@@ -1,6 +1,6 @@
 # erp-worker
 
-Servicio worker complementario a **erp-lite**, encargado de tareas de procesamiento por lotes (batch) que no deben ejecutarse en el hilo principal de la API.
+Worker service for [erp-lite](https://github.com/RaulSanchez119/erp-lite-spring-boot-4-java-21), handling batch processing tasks that shouldn't run on the API's main thread.
 
 ## Qué hace
 
