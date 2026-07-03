@@ -1,9 +1,6 @@
-package com.raulsanchez.worker.batch.mongo.documents;
+package com.raulsanchez.worker.commons.mongo.documents;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -12,11 +9,12 @@ import java.time.Instant;
 import java.util.List;
 import java.util.Map;
 
-@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
 @Builder
 @Document(collection = "product_documents")
-@NoArgsConstructor
-@AllArgsConstructor
 public class ProductInCatalogDocument {
 
     @Id
@@ -28,25 +26,26 @@ public class ProductInCatalogDocument {
 
     private String categoryName;
 
-    private String sku;
+    private Instant createdAt;
 
-    private String name;
+    private Instant updatedAt;
+
+    private String currency;
 
     private String description;
 
     private String imageUrl;
 
+    private String name;
+
     private BigDecimal price;
 
-    private String currency;
-
-    private Integer stock;
+    private String sku;
 
     private Map<String, Object> specifications;
 
+    private int stock;
+
     private List<String> tags;
 
-    private Instant createdAt;
-
-    private Instant updatedAt;
 }

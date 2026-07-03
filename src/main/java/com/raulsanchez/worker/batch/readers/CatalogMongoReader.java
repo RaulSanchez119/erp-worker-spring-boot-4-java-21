@@ -1,7 +1,7 @@
 package com.raulsanchez.worker.batch.readers;
 
-import com.raulsanchez.worker.batch.mongo.documents.CatalogDocument;
-import com.raulsanchez.worker.batch.mongo.repositories.CatalogRepository;
+import com.raulsanchez.worker.commons.mongo.documents.CatalogDocument;
+import com.raulsanchez.worker.commons.mongo.repositories.CatalogRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.batch.infrastructure.item.data.RepositoryItemReader;
 import org.springframework.batch.infrastructure.item.data.builder.RepositoryItemReaderBuilder;

@@ -1,10 +1,7 @@
-package com.raulsanchez.worker.batch.mongo.repositories;
+package com.raulsanchez.worker.commons.mongo.repositories;
 
-import com.raulsanchez.worker.batch.mongo.documents.CatalogDocument;
+import com.raulsanchez.worker.commons.mongo.documents.CatalogDocument;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import java.util.Optional;
-
 public interface CatalogRepository extends MongoRepository<CatalogDocument, String> {
-
 }

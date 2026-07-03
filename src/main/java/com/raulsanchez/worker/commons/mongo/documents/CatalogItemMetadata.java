@@ -1,4 +1,4 @@
-package com.raulsanchez.worker.batch.mongo.documents;
+package com.raulsanchez.worker.commons.mongo.documents;
 
 import java.math.BigDecimal;
 import java.util.List;

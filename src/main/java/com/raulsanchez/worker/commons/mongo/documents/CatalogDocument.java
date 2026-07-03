@@ -1,10 +1,7 @@
-package com.raulsanchez.worker.batch.mongo.documents;
+package com.raulsanchez.worker.commons.mongo.documents;
 
 import com.raulsanchez.worker.commons.CatalogType;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -12,28 +9,29 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import java.time.Instant;
 import java.util.List;
 
-@Data
-@Builder
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Document(collection = "catalogs")
 public class CatalogDocument {
 
     @Id
     private String id;
 
-    @Field(name ="active")
+    @Field(name = "active")
     private boolean active;
 
     private CatalogType catalogType;
 
-    private String name;
-
-    private String description;
-
-    private List<CatalogItem> items;
-
     private Instant createdAt;
 
     private Instant updatedAt;
+
+    private String description;
+
+    private String name;
+
+    private List<CatalogItem> items;
 }

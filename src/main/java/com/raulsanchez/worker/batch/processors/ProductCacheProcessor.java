@@ -1,7 +1,7 @@
 package com.raulsanchez.worker.batch.processors;
 
 import com.raulsanchez.worker.batch.dtos.ProductCacheDto;
-import com.raulsanchez.worker.batch.mongo.documents.ProductInCatalogDocument;
+import com.raulsanchez.worker.commons.mongo.documents.ProductInCatalogDocument;
 import org.jspecify.annotations.Nullable;
 import org.springframework.batch.infrastructure.item.ItemProcessor;
 import org.springframework.stereotype.Component;

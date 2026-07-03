@@ -2,8 +2,8 @@ package com.raulsanchez.worker.batch.configs;
 
 import com.raulsanchez.worker.batch.dtos.CatalogCacheDto;
 import com.raulsanchez.worker.batch.dtos.ProductCacheDto;
-import com.raulsanchez.worker.batch.mongo.documents.CatalogDocument;
-import com.raulsanchez.worker.batch.mongo.documents.ProductInCatalogDocument;
+import com.raulsanchez.worker.commons.mongo.documents.CatalogDocument;
+import com.raulsanchez.worker.commons.mongo.documents.ProductInCatalogDocument;
 import com.raulsanchez.worker.batch.processors.CatalogCacheProcessor;
 import com.raulsanchez.worker.batch.processors.ProductCacheProcessor;
 import com.raulsanchez.worker.batch.readers.CatalogMongoReader;

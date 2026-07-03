@@ -2,7 +2,7 @@ package com.raulsanchez.worker.batch.processors;
 
 import com.raulsanchez.worker.batch.dtos.CatalogCacheDto;
 import com.raulsanchez.worker.batch.dtos.ItemsCacheDto;
-import com.raulsanchez.worker.batch.mongo.documents.CatalogDocument;
+import com.raulsanchez.worker.commons.mongo.documents.CatalogDocument;
 import org.springframework.batch.infrastructure.item.ItemProcessor;
 import org.springframework.stereotype.Component;
 
